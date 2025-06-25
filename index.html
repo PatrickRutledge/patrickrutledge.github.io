@@ -49,8 +49,24 @@
   <header>
     <h1>Patrick Rutledge</h1>
     <p style="font-family: 'Courier New', monospace; font-size: 1.25em;">
-  <span id="typed-text">Curiosity.apply().yields(results)</span><span id="cursor">▇</span>
+  <span id="typed-text"></span><span id="cursor">▇</span>
 </p>
+
+<script>
+  const text = "Curiosity.apply().yields(results)";
+  let index = 0;
+  const speed = 50; // typing speed in ms
+
+  function type() {
+    if (index < text.length) {
+      document.getElementById("typed-text").textContent += text.charAt(index);
+      index++;
+      setTimeout(type, speed);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
 
 <style>
   #cursor {
@@ -60,6 +76,7 @@
     50% { opacity: 0; }
   }
 </style>
+
 
     <nav>
       <a href="https://github.com/PatrickRutledge" target="_blank">GitHub</a>
