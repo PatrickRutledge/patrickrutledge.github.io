@@ -92,9 +92,9 @@
     </div>
   </section>
 
-  <section>
+<section>
   <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xjkrpeoy" method="POST" style="max-width: 500px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <form id="contact-form" action="https://formspree.io/f/xjkrpeoy" method="POST" style="max-width: 500px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
     <label>
       Your Name:<br />
       <input type="text" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
@@ -110,7 +110,34 @@
     <br />
     <button type="submit" style="margin-top: 10px;">Send</button>
   </form>
+
+  <div id="thank-you" style="display: none; margin-top: 20px; font-size: 1.1em; color: #2c3e50;">
+    ✅ <strong>Message Dispatched!</strong> I'll get back to you shortly.
+  </div>
 </section>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    } else {
+      alert('Something went wrong. Please try again later.');
+    }
+  });
+</script>
+
 
 
   <footer>
