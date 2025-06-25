@@ -42,6 +42,12 @@
       padding: 20px;
       font-size: 0.9em;
     }
+    #cursor {
+      animation: blink 1s steps(1) infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
@@ -49,46 +55,41 @@
   <header>
     <h1>Patrick Rutledge</h1>
     <p style="font-family: 'Courier New', monospace; font-size: 1.25em;">
-  <span id="typed-text"></span><span id="cursor">▇</span>
-</p>
+      <span id="typed-text"></span><span id="cursor">▇</span>
+    </p>
 
-<script>
-  const text = "Curiosity.apply().yields(results)";
-  let index = 0;
-  const speed = 50; // typing speed in ms
-
-  function type() {
-    if (index < text.length) {
-      document.getElementById("typed-text").textContent += text.charAt(index);
-      index++;
-      setTimeout(type, speed);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", type);
-</script>
-
-<style>
-  #cursor {
-    animation: blink 1s steps(1) infinite;
-  }
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-</style>
-
+    <script>
+      const text = "Curiosity.apply().yields(results)";
+      let index = 0;
+      const speed = 50;
+      function type() {
+        if (index < text.length) {
+          document.getElementById("typed-text").textContent += text.charAt(index);
+          index++;
+          setTimeout(type, speed);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", type);
+    </script>
 
     <nav>
       <a href="https://github.com/PatrickRutledge" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/patrick-rutledge-33614726/" target="_blank">LinkedIn</a>
       <a href="https://keybase.io/patrickrutledge" target="_blank">Keybase</a>
-      <!-- Add other links as needed -->
     </nav>
   </header>
 
   <section>
-    <h2>Projects</h2>
-    <p><a href="projects.html">View my work →</a></p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <div>
+        <h2>Projects</h2>
+        <p><a href="projects.html">View my work →</a></p>
+      </div>
+      <div>
+        <h2>Collaborations</h2>
+        <p><a href="projects.html#collaborations">View collaborations →</a></p>
+      </div>
+    </div>
   </section>
 
   <footer>
