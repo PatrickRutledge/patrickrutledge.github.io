@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bill of Lading Automation – PDF to Azure SQL order entry system for logistics.">
+  <title>Bill of Lading Automation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .back-link {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #00aced;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .code-block {
+      background: #f1f1f1;
+      padding: 0.5em;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span style="font-size: 1.75em;">🚚</span> Bill of Lading Automation</h1>
+    <p>Automated Order Entry via PDF Email Processing</p>
+    <p><a href="index.html" class="back-link">← Back to home</a></p>
+  </header>
+
+  <div class="container">
+
+  <div class="section">
+    <h2>🧭 Problem Statement & Value Proposition</h2>
+    <p>Order entry from emailed shipping documents was a costly bottleneck. Each transaction required manual processing at <strong>$7.50 per entry</strong>, draining staff resources and limiting throughput. By automating the workflow, this system reduced the cost to approximately <strong>$3.50 per entry</strong>—a <strong>53% savings</strong> per transaction.</p>
+    <ul>
+      <li>💸 Cut transaction cost by over half</li>
+      <li>📈 Doubled order capacity without increasing headcount</li>
+      <li>📦 Enabled scalable operations during peak demand</li>
+      <li>✅ Reduced errors in shipping data for better fulfillment accuracy</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🤝 Developer’s Insight</h2>
+    <p>This project began with a conversation—with Brad, who was overwhelmed by the grind of order entry. Customers were waiting, not because trucks weren’t ready, but because service reps were stuck typing up forms instead of helping them.</p>
+    <p>So we built a system that gave people their time back. By automating the order pipeline, staff could focus on customers again. Not just handling more orders, but handling them better. We're selling deeper into existing relationships because the freight gets <em>on the truck faster</em>, picked up sooner, and delivered with less delay.</p>
+    <p>Now, instead of reacting to paperwork, we're creating space to solve the big problems our customers face.</p>
+    <p>This is what technology should do—reduce friction, elevate people, and unlock the capacity to grow.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔍 Project Overview</h2>
+    <p>A cloud-native solution built for a trucking company to convert shipping PDFs into structured database rows using Azure Functions and Python. It streamlines logistics workflows with real-time parsing, secure storage, and robust logging.</p>
+    <div class="project-image">
+      <img src="images/pdf-2-sql.png" alt="PDF to Azure SQL Architecture Sketch">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>💰 Estimated Financial Impact</h2>
+    <p>Assuming the company processes <strong>100 orders per day</strong>, here's what automation delivers:</p>
+    <table>
+      <tr>
+        <th>Metric</th>
+        <th>Before Automation</th>
+        <th>After Automation</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Cost per Order</td>
+        <td>$7.50</td>
+        <td>$3.50</td>
+        <td><strong>$4.00</strong></td>
+      </tr>
+      <tr>
+        <td>Daily Cost</td>
+        <td>$750</td>
+        <td>$350</td>
+        <td><strong>$400/day</strong></td>
+      </tr>
+      <tr>
+        <td>Monthly Cost (30 days)</td>
+        <td>$22,500</td>
+        <td>$10,500</td>
+        <td><strong>$12,000/mo</strong></td>
+      </tr>
+      <tr>
+        <td>Annual Savings</td>
+        <td>—</td>
+        <td>—</td>
+        <td><strong>$144,000/yr</strong></td>
+      </tr>
+    </table>
+    <p>🧮 <em>At scale, that's over <strong>$144K/year</strong> in operational savings.</em></p>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Repository & Documentation</h2>
+    <ul>
+      <li><a href="https://github.com/PatrickRutledge/bill_of_lading_automation" target="_blank">GitHub Repo</a></li>
+      <li><a href="https://github.com/PatrickRutledge/bill_of_lading_automation/blob/main/README.md" target="_blank">README – System Overview</a></li>
+      <li><a href="https://github.com/PatrickRutledge/bill_of_lading_automation/blob/main/AZURE_DEPLOYMENT.md" target="_blank">Azure Deployment Guide</a></li>
+      <li><a href="https://github.com/PatrickRutledge/bill_of_lading_automation/blob/main/AZURE_CONFIGURATION_GUIDE.md" target="_blank">Function Configuration Guide</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🗃 Technologies Used</h2>
+    <table>
+      <tr><th>Component</th><th>Stack / Service</th></tr>
+      <tr><td>PDF Parsing</td><td>Python, PyPDF2, Regex</td></tr>
+      <tr><td>Email Integration</td><td>Gmail App Password + IMAP</td></tr>
+      <tr><td>Cloud Functions</td><td>Azure Function (Python)</td></tr>
+      <tr><td>Database</td><td>Azure SQL Database</td></tr>
+      <tr><td>Monitoring</td><td>Azure Application Insights</td></tr>
+      <tr><td>Deployment Tools</td><td>Azure CLI, Functions Core Tools</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>✅ Status</h2>
+    <ul>
+      <li>Currently active in production</li>
+      <li>Runs daily at 9 AM UTC</li>
+      <li>Processing volumes logged & monitored</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Next Evolution</h2>
+    <ul>
+      <li>Multi-client routing and BOL format detection</li>
+      <li>Web interface for manual override and exception review</li>
+      <li>Integration with scheduling and dispatch platforms</li>
+      <li>OCR enhancement for image-based PDFs</li>
+      <li>AI-based anomaly detection on shipping data patterns</li>
+    </ul>
+  </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. All rights reserved.
+  </footer>
+
+</body>
+</html>
