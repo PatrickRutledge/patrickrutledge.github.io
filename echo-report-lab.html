@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EchoReport Lab – Civic-grade reporting for machine learning workflows.">
+  <title>EchoReport Lab – ML Report Archiving</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #34495e;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #bbb;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .section {
+      background: white;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 1em;
+    }
+    footer {
+      background: #34495e;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+ <header style="position: relative; background: #34495e; color: white; padding: 30px 20px; text-align: center;">
+  <h1><span style="font-size: 1.75em;">📊</span> EchoReport Lab</h1>
+  <p>Symbolic ML Report Archiving for Clarity & Stewardship</p>
+  <p><a href="index.html" style="color:#1abc9c;">← Back to Home</a></p>
+
+  <!-- Button floated to top-right -->
+  <a href="keras-model-report.html" target="_blank"
+     style="position: absolute; top: 30px; right: 30px; background-color: #1abc9c; color: white;
+            padding: 0.6em 1em; border-radius: 6px; text-decoration: none; font-weight: bold;">
+    🚀 View Sample Report
+  </a>
+</header>
+
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🧭 Project Overview</h2>
+      <p>EchoReport Lab generates full HTML archives from machine learning runs. It captures:</p>
+      <ul>
+        <li>Training history and epoch metrics</li>
+        <li>TSNE plots of model outputs</li>
+        <li>Line charts for loss, accuracy, and validation accuracy</li>
+        <li>Model summary, parameter breakdown, embedded notes and source code</li>
+      </ul>
+      <p>The final report is viewable in IDEs, browsers, or printable as a PDF—ideal for review, discussion, and civic-grade reproducibility.</p>
+    </div>
+
+    <div class="section">
+      <h2>📦 Access & Documentation</h2>
+      <ul>
+        <li><strong>PyPI Package:</strong> <a href="https://pypi.org/project/echo-report-lab/0.1.2/" target="_blank">echo-report-lab on PyPI</a></li>
+        <li><strong>GitHub Repo:</strong> <a href="https://github.com/PatrickRutledge/echo-report-lab" target="_blank">echo-report-lab source code</a></li>
+        <li><strong>README:</strong> <a href="https://github.com/PatrickRutledge/echo-report-lab#readme-ov-file" target="_blank">direct link to overview</a></li>
+        <li><strong>Keras Discussion:</strong> <a href="https://github.com/keras-team/keras/discussions" target="_blank">GitHub Ideas thread</a> (search for “EchoReport Lab”)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🌐 Use Cases</h2>
+      <ul>
+        <li>Audit-ready model archives for civic dashboards</li>
+        <li>ML experimentation tracking with visual clarity</li>
+        <li>Student demos and reproducible research</li>
+        <li>Symbolic serialization for review and handoff</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📥 Install Instructions</h2>
+      <pre><code>pip install echo-report-lab==0.1.2</code></pre>
+    </div>
+
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. All rights reserved.
+  </footer>
+
+</body>
+</html>
