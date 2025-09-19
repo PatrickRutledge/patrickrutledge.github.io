@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SunMed Commission Dashboard – Automated commission processing and reporting system for manufacturers' reps.">
+  <title>SunMed Commission Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .back-link {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #00aced;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .code-block {
+      background: #f1f1f1;
+      padding: 0.5em;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 1em;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span style="font-size: 1.75em;">🏢</span> SunMed Commission Dashboard</h1>
+    <p>Automated Commission Processing & Territory Management System</p>
+    <p><a href="index.html" class="back-link">← Back to home</a></p>
+  </header>
+
+  <div class="container">
+
+  <div class="section">
+    <h2>🧭 Problem Statement & Value Proposition</h2>
+    <p>Commission processing was a monthly nightmare for a Medical Manufacturing Representative. The Controller or the CFO spent <strong>2 full days every month</strong> manually re-entering data from formatted ERP reports into Excel, calculating commissions by hand, and creating individual statements. This critical end-of-month work was error-prone, labor-intensive, and tied up senior accounting staff at the worst possible time.</p>
+    
+    <h3>💡Automated Solution:</h3>
+
+    <ul>
+      <li>💸 Reduced annual processing cost from <strong>$20,232 to $400</strong>—a <strong>98% savings</strong></li>
+      <li>⏰ Cut processing time from 2 days to 30 minutes</li>
+      <li>🎯 Eliminated manual re-entry errors that cost $8,700/year in follow-up labor</li>
+      <li>📈 Freed up senior accounting staff for higher-value work during critical month-end</li>
+      <li>🔒 Added territory management, ZIP code automation, and professional PDF reporting</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🤝 Developer's Insight</h2>
+    <p>This project started when the developer recognized the CFO spent her weekend calculating commissions by hand—circling numbers on printed reports, adding them on a calculator, and manually creating individual statements for each rep. It was painful to see such valuable talent buried in data entry.</p>
+    <p>The real challenge wasn't just automation—it was that the "pretty" reports from vendor ERP systems were designed for reading, not processing. Every piece of data was being re-entered manually, creating countless opportunities for errors to cascade through to strain sales relationships.</p>
+    <p>Now, what used to consume two days of senior accounting time every month happens in less than 2 minutes. The CFO can focus her energy on analysis and strategy instead of data entry and manual computation. The sales team receives professional, accurate reports that build trust..</p>
+    <p>This is what good automation looks like—it doesn't just save time, it transforms how people work and elevates their contribution to the business.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔍 Project Overview</h2>
+    <p>The desktop Streamlit application transforms commission processing from a monthly ordeal into a streamlined workflow. Upload multiple xls, csv and pdf sales files, automatically calculate commissions by territory, and generate professional PDF reports with integrated territory management and commission calculation using individual territory and salesperson commission rates..</p>
+    <div class="project-image">
+      <img src="\images\processing_complete.png" alt="Commission Processing Complete Dashboard">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎥 System Demonstration</h2>
+    <p>Watch the complete system workflow from file upload to report generation:</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/7o8mwYoc45Y" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>💰 Financial Impact Analysis</h2>
+    <p>Based on annual commission processing for a mid-size manufacturer's rep organization:</p>
+    <table>
+      <tr>
+        <th>Cost Component</th>
+        <th>Before Automation (Annual)</th>
+        <th>After Automation (Annual)</th>
+        <th>Annual Savings</th>
+      </tr>
+      <tr>
+        <td>Primary Processing Labor</td>
+        <td>$11,532</td>
+        <td>$200</td>
+        <td><strong>$11,332</strong></td>
+      </tr>
+      <tr>
+        <td>Error Follow-up (Accounting)</td>
+        <td>$2,200</td>
+        <td>$100</td>
+        <td><strong>$2,100</strong></td>
+      </tr>
+      <tr>
+        <td>Error Follow-up (Sales)</td>
+        <td>$6,500</td>
+        <td>$100</td>
+        <td><strong>$6,400</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Total Annual Cost</strong></td>
+        <td><strong>$20,232</strong></td>
+        <td><strong>$400</strong></td>
+        <td><strong>$19,832</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Cost Reduction</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td><strong>98% savings</strong></td>
+      </tr>
+    </table>
+    <p>🧮 <em>An incredible <strong>$19,832/year</strong> in operational savings with dramatically improved accuracy and speed.</em></p>
+  </div>
+
+  <div class="section">
+    <h2>📊 Key Features & Screenshots</h2>
+    
+    <h3>Professional Report Generation</h3>
+    <div class="project-image">
+      <img src="\images\summary_report.png" alt="Summary Commission Report">
+      <p><em>Summary reports perfect for check writing with territory breakdowns</em></p>
+    </div>
+
+    <div class="project-image">
+      <img src="\images\individual_report.png" alt="Individual Commission Report">
+      <p><em>Detailed individual reports with complete transaction history</em></p>
+    </div>
+
+    <h3>Territory & Commission Management</h3>
+    <div class="project-image">
+      <img src="\images\territory_management.png" alt="Territory Management Interface">
+      <p><em>Web-based territory configuration with commission rates and ZIP assignments</em></p>
+    </div>
+
+    <div class="project-image">
+      <img src="\images\zip-code_lookup.png" alt="ZIP Code Assignment Manager">
+      <p><em>Automated ZIP code lookup and territory assignment tools</em></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Repository & Documentation</h2>
+    <ul>
+      <li><a href="https://gitlab.com/private/sunmed-commission-system" target="_blank">Private GitLab Repository</a> (Client-owned)</li>
+      <li><a href="https://youtu.be/7o8mwYoc45Y" target="_blank">Complete System Demo Video</a></li>
+      <li>Comprehensive README with setup instructions</li>
+      <li>Desktop executable distribution for end users</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🗃 Technologies Used</h2>
+    <table>
+      <tr><th>Component</th><th>Stack / Technology</th></tr>
+      <tr><td>Frontend Interface</td><td>Streamlit, Python</td></tr>
+      <tr><td>File Processing</td><td>Pandas, PyPDF2, OpenPyXL</td></tr>
+      <tr><td>Report Generation</td><td>ReportLab, Professional PDF templating</td></tr>
+      <tr><td>Territory Management</td><td>JSON configuration, ZIP code automation</td></tr>
+      <tr><td>Data Storage</td><td>Local file system, organized archival</td></tr>
+      <tr><td>Distribution</td><td>PyInstaller executable, Windows desktop app</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>✅ Current Status</h2>
+    <ul>
+      <li><strong>Production deployment</strong> - Used monthly for commission processing</li>
+      <li><strong>Expanded usage</strong> - Now used for customer reports, territory analysis, and sales reporting</li>
+      <li><strong>Local deployment</strong> - Runs on any Windows computer without external dependencies</li>
+      <li><strong>Automated archival</strong> - All reports stored on company shared drive with timestamps</li>
+      <li><strong>Scalable processing</strong> - Handles hundreds of commission reports per month</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 System Architecture Benefits</h2>
+    <ul>
+      <li><strong>No Database Required</strong> - Perfect for small-to-medium businesses</li>
+      <li><strong>Local Deployment</strong> - Install on multiple machines, no cloud dependencies</li>
+      <li><strong>Disaster Recovery</strong> - Reports archived on shared drive, survive machine failures</li>
+      <li><strong>Version Control</strong> - Automatic report versioning and historical tracking</li>
+      <li><strong>Multi-format Support</strong> - PDF, Excel, CSV file processing</li>
+      <li><strong>Territory Intelligence</strong> - Automated ZIP code to territory mapping</li>
+    </ul>
+  </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. All rights reserved.
+  </footer>
+
+</body>
+</html>

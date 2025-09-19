@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strong's Dictionary Analyzer – Cross-platform desktop application for biblical text analysis with Hebrew and Greek concordance data.">
+  <title>Strong's Dictionary Analyzer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .back-link {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #00aced;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .code-block {
+      background: #f1f1f1;
+      padding: 0.5em;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 1em;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 6px;
+    }
+    .demo-link {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+    }
+    .demo-link:hover {
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+    }
+    .download-link {
+      display: inline-block;
+      background: #27ae60;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+    }
+    .download-link:hover {
+      background: #229954;
+      color: white;
+      text-decoration: none;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1.5em;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+    }
+    .feature-card h4 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span style="font-size: 1.75em;">📖</span> Strong's Dictionary Analyzer</h1>
+    <p>Cross-Platform Biblical Text Analysis & Hebrew/Greek Concordance Tool</p>
+    <p><a href="index.html" class="back-link">← Back to home</a></p>
+  </header>
+
+  <div class="container">
+
+  <div class="section">
+    <h2>🎉 Initial Release - Version 1.0.0</h2>
+    <p>A powerful cross-platform desktop application for analyzing Strong's Hebrew and Greek concordance data. Built with <strong>Vue.js and Electron</strong>, providing a beautiful, modern interface for biblical text analysis that works both online and offline.</p>
+    
+    <div style="text-align: center; margin: 2em 0;">
+      <a href="https://red-grass-0a90bd310.1.azurestaticapps.net/" class="demo-link" target="_blank">🌐 Try Live Web App</a>
+      <a href="#download" class="download-link">💻 Download Desktop App</a>
+    </div>
+
+    <h3>🎯 Perfect For:</h3>
+    <ul>
+      <li>📚 <strong>Bible Students</strong> - Detailed word study and analysis</li>
+      <li>👨‍🏫 <strong>Pastors & Teachers</strong> - Sermon preparation and teaching materials</li>
+      <li>🎓 <strong>Scholars & Researchers</strong> - Academic biblical text analysis</li>
+      <li>🌍 <strong>Language Enthusiasts</strong> - Hebrew and Greek language learning</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Quick Start Options</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>🌐 Web Application (Recommended)</h4>
+        <p>Use instantly in any modern browser - no download required. Always up-to-date with the latest features and works on any device.</p>
+        <a href="https://red-grass-0a90bd310.1.azurestaticapps.net/" target="_blank">Launch Web App →</a>
+      </div>
+      <div class="feature-card">
+        <h4>💻 Desktop Application</h4>
+        <p>Download and install for offline use. Runs natively on Windows, macOS, and Linux with full functionality.</p>
+        <a href="#download">Download Options →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📊 Key Features & Screenshots</h2>
+    
+    <h3>Text Analysis with Strong's Numbers</h3>
+    <div class="project-image">
+      <img src="\images\text-analysis-2.png" alt="Text Analysis Interface">
+      <p><em>Paste biblical text with Strong's numbers for comprehensive word analysis</em></p>
+    </div>
+
+    <h3>Main Interface & Navigation</h3>
+    <div class="project-image">
+      <img src="\images\main-interface-1.png" alt="Main Interface">
+      <p><em>Clean, modern interface with text analysis and single word lookup tools</em></p>
+    </div>
+
+    <h3>Professional PDF Reports</h3>
+    <div class="project-image">
+      <img src="\images\pdf-export-5.png" alt="PDF Export Feature">
+      <p><em>Generate and export professional PDF reports of your analysis</em></p>
+    </div>
+
+    <h3>Detailed Results Table</h3>
+    <div class="project-image">
+      <img src="\images\results-table-3.png" alt="Analysis Results Table">
+      <p><em>Comprehensive results showing Strong's numbers, Hebrew/Greek words, and definitions</em></p>
+    </div>
+
+    <h3>Single Word Lookup</h3>
+    <div class="project-image">
+      <img src="\images\single-lookup-4.png" alt="Single Word Lookup">
+      <p><em>Quick reference tool for individual Strong's number lookups</em></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>✨ Core Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>🔍 Interactive Dictionary Lookup</h4>
+        <p>Search and explore Hebrew and Greek words with comprehensive definitions from Strong's concordance.</p>
+      </div>
+      <div class="feature-card">
+        <h4>📝 Word Analysis Tools</h4>
+        <p>Analyze biblical text with automatic Strong's number identification and word frequency counting.</p>
+      </div>
+      <div class="feature-card">
+        <h4>💻 Cross-Platform Support</h4>
+        <p>Runs seamlessly on Windows, macOS, and Linux. Also available as a web application.</p>
+      </div>
+      <div class="feature-card">
+        <h4>📄 PDF Export & Printing</h4>
+        <p>Generate professional PDF reports and print analysis results directly from the application.</p>
+      </div>
+      <div class="feature-card">
+        <h4>⚡ Fast Local Processing</h4>
+        <p>No internet connection required after installation - all processing happens locally for privacy and speed.</p>
+      </div>
+      <div class="feature-card">
+        <h4>🎨 Beautiful Modern UI</h4>
+        <p>Clean, responsive design built with Vue.js featuring real-time search and keyboard navigation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="download">
+    <h2>📦 Installation & Downloads</h2>
+    
+    <h3>🌐 Web Application (Instant Access)</h3>
+    <p>No installation required - works instantly in your browser:</p>
+    <div style="text-align: center; margin: 1em 0;">
+      <a href="https://red-grass-0a90bd310.1.azurestaticapps.net/" class="demo-link" target="_blank">Launch Web Application</a>
+    </div>
+
+    <h3>💻 Desktop Applications</h3>
+    <table>
+      <tr>
+        <th>Platform</th>
+        <th>Requirements</th>
+        <th>Download</th>
+        <th>Installation</th>
+      </tr>
+      <tr>
+        <td><strong>Windows</strong></td>
+        <td>Windows 10 or later</td>
+        <td><a href="https://apps.microsoft.com/detail/9p5w8qx9x9x9" target="_blank">Microsoft Store</a> or <a href="https://github.com/PatrickRutledge/strongsapp/releases" target="_blank">GitHub Releases</a></td>
+        <td>Install from Store or extract ZIP and run executable</td>
+      </tr>
+      <tr>
+        <td><strong>macOS</strong></td>
+        <td>macOS 10.14 or later</td>
+        <td>Coming soon to Mac App Store</td>
+        <td>Standard .app installation</td>
+      </tr>
+      <tr>
+        <td><strong>Linux</strong></td>
+        <td>Ubuntu 18.04+ or equivalent</td>
+        <td>Available via GitHub releases</td>
+        <td>AppImage or .deb package</td>
+      </tr>
+    </table>
+
+    <h3>🛠️ From Source Code</h3>
+    <div class="code-block">
+git clone [repository-url]<br>
+cd strongs-dictionary-analyzer<br>
+npm install<br>
+npm run build    # For web version<br>
+npm run electron # For desktop version
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🗃 Technologies Used</h2>
+    <table>
+      <tr><th>Component</th><th>Technology Stack</th></tr>
+      <tr><td>Frontend Framework</td><td>Vue.js 3 with Composition API</td></tr>
+      <tr><td>Desktop Application</td><td>Electron for cross-platform support</td></tr>
+      <tr><td>Build System</td><td>Vite for fast development and building</td></tr>
+      <tr><td>Data Processing</td><td>Clean JSON format (processed from XML)</td></tr>
+      <tr><td>PDF Generation</td><td>Client-side PDF creation and export</td></tr>
+      <tr><td>UI Components</td><td>Custom Vue components with responsive design</td></tr>
+      <tr><td>Database</td><td>Complete Strong's Hebrew and Greek concordance</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>📋 System Requirements</h2>
+    <table>
+      <tr>
+        <th>Requirement</th>
+        <th>Minimum</th>
+        <th>Recommended</th>
+      </tr>
+      <tr>
+        <td><strong>RAM</strong></td>
+        <td>4GB</td>
+        <td>8GB</td>
+      </tr>
+      <tr>
+        <td><strong>Storage</strong></td>
+        <td>200MB available space</td>
+        <td>500MB for updates and data</td>
+      </tr>
+      <tr>
+        <td><strong>Operating System</strong></td>
+        <td>Windows 10, macOS 10.14, Ubuntu 18.04</td>
+        <td>Latest OS versions</td>
+      </tr>
+      <tr>
+        <td><strong>Browser (Web Version)</strong></td>
+        <td>Chrome 90+, Firefox 88+, Safari 14+</td>
+        <td>Latest browser versions</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Links & Resources</h2>
+    <ul>
+      <li><a href="https://red-grass-0a90bd310.1.azurestaticapps.net/" target="_blank">Live Web Application</a></li>
+      <li><a href="https://github.com/PatrickRutledge/strongsapp" target="_blank">GitHub Repository</a> (Source code with MIT License)</li>
+      <li><a href="https://github.com/PatrickRutledge/strongsapp/blob/main/README.md" target="_blank">Documentation & User Guide</a></li>
+      <li><a href="https://github.com/PatrickRutledge/strongsapp/releases" target="_blank">Download Desktop Applications</a></li>
+      <li><a href="https://apps.microsoft.com/detail/9p5w8qx9x9x9" target="_blank">Microsoft Store - Strong's LexiCount</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎊 Coming Soon</h2>
+    <ul>
+      <li><strong>macOS App Store</strong> - Native Mac platform distribution</li>
+      <li><strong>Additional Languages</strong> - Extended language support and translations</li>
+      <li><strong>Advanced Search</strong> - Enhanced search capabilities and filtering</li>
+      <li><strong>Mobile Apps</strong> - Native iOS and Android applications</li>
+      <li><strong>Cloud Sync</strong> - Save and sync analysis across devices</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>✅ Current Status</h2>
+    <ul>
+      <li><strong>Production Ready</strong> - Stable v1.0.0 release with comprehensive testing</li>
+      <li><strong>Web Application Live</strong> - Accessible instantly via browser</li>
+      <li><strong>Windows Desktop Available</strong> - Ready-to-run executable package</li>
+      <li><strong>Open Source</strong> - MIT License with full source code availability</li>
+      <li><strong>Cross-Platform Support</strong> - Works on Windows, macOS, and Linux</li>
+      <li><strong>Complete Database</strong> - Full Strong's Hebrew and Greek concordance included</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🤝 Contributing & Support</h2>
+    <p>This is an open-source project under the MIT License. Contributions are welcome!</p>
+    <ul>
+      <li><strong>Bug Reports</strong> - Submit issues via GitHub Issues</li>
+      <li><strong>Feature Requests</strong> - Suggest new features and enhancements</li>
+      <li><strong>Code Contributions</strong> - Pull requests for improvements welcome</li>
+      <li><strong>Documentation</strong> - Help improve guides and documentation</li>
+      <li><strong>Testing</strong> - Report compatibility issues across platforms</li>
+    </ul>
+    <p><strong>License:</strong> MIT License - free for personal and commercial use</p>
+  </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. All rights reserved. | Open Source Project under MIT License
+  </footer>
+
+</body>
+</html>
