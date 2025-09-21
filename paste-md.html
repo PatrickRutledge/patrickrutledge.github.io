@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="paste-md – Transform Markdown into beautifully formatted text with Ctrl+Shift+V">
+  <title>paste-md – Markdown to Rich Text</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #bbb;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .section {
+      background: white;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 1em;
+    }
+    .demo-box {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+      padding: 1em;
+      margin: 1em 0;
+      font-family: 'Consolas', 'Monaco', monospace;
+      font-size: 0.9em;
+    }
+    .highlight {
+      background: #e8f4fd;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin: 1em 0;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1em;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+    }
+    .download-button {
+      background: #27ae60;
+      color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0.5em 0;
+    }
+    .download-button:hover {
+      background: #229954;
+      text-decoration: none;
+    }
+    .screenshot {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin: 1.5em 0;
+    }
+    .screenshot-caption {
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: -0.5em;
+      margin-bottom: 1.5em;
+      font-style: italic;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin: 1.5em 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      margin: 1.5em 0;
+    }
+    .comparison-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header style="position: relative; background: #2c3e50; color: white; padding: 30px 20px; text-align: center;">
+  <h1><span style="font-size: 1.75em;">📝</span> paste-md</h1>
+  <p>Transform Markdown into beautifully formatted text with Ctrl+Shift+V</p>
+  <p><a href="index.html" style="color:#1abc9c;">← Back to Home</a></p>
+
+  <!-- Button floated to top-right -->
+  <a href="https://github.com/PatrickRutledge/paste-md" target="_blank"
+     style="position: absolute; top: 30px; right: 30px; background-color: #27ae60; color: white;
+            padding: 0.6em 1em; border-radius: 6px; text-decoration: none; font-weight: bold;">
+    📦 View on GitHub
+  </a>
+</header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🎯 Project Overview</h2>
+      <p>paste-md is a Windows system tray application that instantly converts Markdown text into beautifully formatted rich text for Microsoft Office applications. Simply copy any Markdown and press <span class="highlight">Ctrl+Shift+V</span> to paste with full formatting—including GitHub-style code blocks with gray backgrounds.</p>
+
+      <img src="images/pastemd3840x2160.png" alt="Paste-MD converting Markdown to rich text" class="screenshot" />
+      <p class="screenshot-caption">Paste-MD seamlessly converts Markdown from VS Code into beautifully formatted documents in OneNote</p>
+
+      <div class="demo-box">
+        <strong>Example:</strong><br>
+        Copy: <code>**Hello World!** Here's some `code` with syntax highlighting.</code><br>
+        Press Ctrl+Shift+V → Pastes as: <strong>Hello World!</strong> Here's some <code style="background:#f6f8fa;padding:2px 4px;">code</code> with syntax highlighting.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✨ Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <strong>🎯 Smart Detection</strong><br>
+          Automatically detects Markdown in clipboard (requires 2+ patterns)
+        </div>
+        <div class="feature-card">
+          <strong>⚡ Instant Conversion</strong><br>
+          No preview needed—paste renders immediately
+        </div>
+        <div class="feature-card">
+          <strong>💻 Code Block Support</strong><br>
+          GitHub-style gray backgrounds with monospace fonts
+        </div>
+        <div class="feature-card">
+          <strong>📄 Office Compatible</strong><br>
+          Works with Word, OneNote, Outlook, and PowerPoint
+        </div>
+        <div class="feature-card">
+          <strong>🎨 Full Markdown Support</strong><br>
+          Headers, bold, italic, lists, links, tables, blockquotes
+        </div>
+        <div class="feature-card">
+          <strong>↩️ Undo Support</strong><br>
+          Ctrl+Z always available to revert changes
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🚀 How It Works</h2>
+      <ol>
+        <li><strong>System Tray App</strong> runs silently in background</li>
+        <li><strong>Global Hotkey</strong> <code>Ctrl+Shift+V</code> triggers smart paste</li>
+        <li><strong>Smart Detection</strong> identifies Markdown patterns in clipboard</li>
+        <li><strong>Code Blocks</strong> render with gray background (#f6f8fa) and Consolas font</li>
+        <li><strong>Preserves Original</strong> - Regular Ctrl+V still works normally</li>
+      </ol>
+
+      <img src="images/pm-system-tray.png" alt="Paste-MD system tray menu" class="screenshot" />
+      <p class="screenshot-caption">System tray icon provides quick access to paste options and application controls</p>
+
+      <p><strong>Confirmed Working:</strong></p>
+      <ul>
+        <li>✅ <strong>Microsoft Word</strong> - Full RTF support</li>
+        <li>✅ <strong>OneNote</strong> - HTML formatting</li>
+        <li>✅ <strong>Outlook</strong> - Email composition</li>
+        <li>❌ PowerPoint - Not supported (use screenshots)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📦 Installation & Usage</h2>
+      
+      <h3>Quick Install</h3>
+      <div class="demo-box">
+git clone https://github.com/PatrickRutledge/paste-md.git<br>
+cd paste-md<br>
+dotnet build --configuration Release<br>
+.\INSTALL.bat  # Run as Administrator
+      </div>
+
+      <h3>Usage</h3>
+      <ol>
+        <li><strong>Start</strong> paste-md (tray icon appears)</li>
+        <li><strong>Copy</strong> any Markdown text from GitHub, VS Code, etc.</li>
+        <li><strong>Press</strong> <code>Ctrl+Shift+V</code> in Word/OneNote/Outlook</li>
+        <li><strong>Done!</strong> Formatted text with proper code block styling</li>
+      </ol>
+
+      <a href="https://github.com/PatrickRutledge/paste-md/releases" class="download-button" target="_blank">
+        📥 Download Latest Release
+      </a>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Technical Details</h2>
+      <ul>
+        <li><strong>Platform:</strong> Windows 10/11 (x64)</li>
+        <li><strong>Framework:</strong> .NET Framework 4.8 for COM compatibility</li>
+        <li><strong>Dependencies:</strong> .NET 6.0 Runtime</li>
+        <li><strong>Architecture:</strong> System tray application with global hotkeys</li>
+        <li><strong>Markdown Engine:</strong> <a href="https://github.com/lunet-io/markdig" target="_blank">Markdig</a></li>
+      </ul>
+
+      <h3>Project Structure</h3>
+      <div class="demo-box">
+paste-md/<br>
+├── src/<br>
+│   ├── paste-md.Core/        # Core Markdown processing<br>
+│   └── paste-md.TrayApp/     # System tray application<br>
+├── INSTALL.bat               # Quick installer<br>
+├── UNINSTALL.bat            # Clean uninstaller<br>
+└── README.md                # Documentation
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🎮 Demo & Examples</h2>
+
+      <h3>📹 Video Demonstration</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/97V38l9iuQc" title="Paste-MD Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="screenshot-caption">Watch paste-md in action converting complex Markdown documents</p>
+
+      <h3>📊 Real-World Example: Markdown Tables</h3>
+      <p>One of paste-md's most powerful features is converting Markdown tables into perfectly formatted Office tables:</p>
+
+      <div class="comparison-grid">
+        <div>
+          <img src="images/pastemd-unrendered-table (2).png" alt="Markdown table source code" />
+          <p style="text-align: center; font-size: 0.9em;"><strong>Before:</strong> Raw Markdown table in VS Code</p>
+        </div>
+        <div>
+          <img src="images/pastemd-Rendered-table (1).png" alt="Rendered table in OneNote" />
+          <p style="text-align: center; font-size: 0.9em;"><strong>After:</strong> Beautifully formatted table in OneNote</p>
+        </div>
+      </div>
+
+      <p>paste-md preserves:</p>
+      <ul>
+        <li>Table structure and alignment</li>
+        <li>Links (like the Markdig reference)</li>
+        <li>Code formatting within cells</li>
+        <li>Priority indicators and styling</li>
+      </ul>
+
+      <h3>📸 Conversion Example</h3>
+      <img src="images/paste-md-hero1920x1080.png" alt="Paste-MD feature overview in OneNote" class="screenshot" />
+      <p class="screenshot-caption">Side-by-side view: Raw Markdown in VS Code (left) instantly converts to beautifully formatted content in OneNote (right) with Ctrl+Shift+V</p>
+    </div>
+
+    <div class="section">
+      <h2>🔗 Resources & Links</h2>
+      <ul>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/PatrickRutledge/paste-md" target="_blank">github.com/PatrickRutledge/paste-md</a></li>
+        <li><strong>Documentation:</strong> <a href="https://github.com/PatrickRutledge/paste-md#readme" target="_blank">Complete README</a></li>
+        <li><strong>Store Submission Guide:</strong> Available in project documentation</li>
+        <li><strong>Issues & Support:</strong> <a href="https://github.com/PatrickRutledge/paste-md/issues" target="_blank">GitHub Issues</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Use Cases</h2>
+      <ul>
+        <li>Converting GitHub README content for presentations</li>
+        <li>Pasting documentation into Word documents</li>
+        <li>Formatting technical notes in OneNote</li>
+        <li>Sharing code snippets via Outlook with proper styling</li>
+        <li>Creating professional reports from Markdown drafts</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔧 Troubleshooting</h2>
+      
+      <h3>Hotkey not working?</h3>
+      <ul>
+        <li>Ensure tray icon is visible in system tray</li>
+        <li>Try right-click menu → "Paste Rendered Markdown"</li>
+        <li>Verify Markdown text has 2+ patterns (headers, bold, lists)</li>
+      </ul>
+
+      <h3>No formatting?</h3>
+      <ul>
+        <li>Regular <code>Ctrl+V</code> pastes plain text (this is normal)</li>
+        <li>Use <code>Ctrl+Shift+V</code> for rendered Markdown</li>
+        <li>Test with samples from project documentation</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. Made with ❤️ for the Markdown community.
+  </footer>
+
+</body>
+</html>
