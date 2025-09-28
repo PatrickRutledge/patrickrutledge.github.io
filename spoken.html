@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Spoken – A Windows-first Bible app that formats Scripture into readable, justified prose with poetry preserved as line-broken blocks.">
+  <title>Spoken - Bible Reading Experience</title>
+  <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0A5BCB;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #d9e8ff;
+    }
+    .back-link {
+      color: #d9e8ff;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    h1, h2, h3 {
+      color: #0A5BCB;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #0A5BCB;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .code-block {
+      background: #f1f1f1;
+      padding: 0.5em;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    footer {
+      background: #0A5BCB;
+      color: #d9e8ff;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .demo-link {
+      display: inline-block;
+      background: #0A5BCB;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+    }
+    .demo-link:hover {
+      background: #084da9;
+      color: white;
+      text-decoration: none;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1.5em;
+      border-radius: 6px;
+      border-left: 4px solid #0A5BCB;
+    }
+    .feature-card h4 {
+      margin-top: 0;
+      color: #0A5BCB;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 1.5em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 2em 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="position: relative; padding-right: 160px;">
+    <h1><img src="images/spoken-logo.png" alt="Spoken Logo" style="height: 1.75em; vertical-align: middle; margin-right: 10px;"> Spoken</h1>
+    <p>The Bible as it was meant to be experienced — immersive, natural, and beautifully readable</p>
+    <p><a href="index.html" class="back-link">← Back to home</a></p>
+    
+    <!-- Microsoft Store Badge positioned in top-right corner -->
+    <div style="position: absolute; top: 30px; right: 30px; max-width: 150px;">
+      <ms-store-badge
+        productid="9pfmkd32pj0r"
+        productname="Spoken"
+        window-mode="direct"
+        theme="auto"
+        size="large"
+        language="en-us"
+        animation="off">
+      </ms-store-badge>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>🎉 A New Bible Reading Experience</h2>
+      <p>Discover the Bible as it was meant to be experienced — immersive, natural, and beautifully readable. The Spoken app is designed for clarity, accessibility, and deep engagement. Connect with Scripture in a way that feels intuitive, personal, and powerful.</p>
+      
+      <div style="text-align: center; margin: 2em 0;">
+        <a href="https://youtu.be/kszHnbD97KU?si=waRf-_vjyqWcM5fo" target="_blank" class="demo-link">🎬 Watch Demo Video</a>
+      </div>
+
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kszHnbD97KU" title="Spoken Bible App Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✨ Why Prose Formatting?</h2>
+      <p>Traditional chapter-and-verse layouts are designed for reference. Spoken restores the natural flow of The Holy Bible, by presenting it in clean, paragraph-based prose — making it easier to follow narratives, grasp poetic structure, and reflect without distraction.</p>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>📖 Narrative Immersion</h4>
+          <p>Read Genesis, Ruth, or Acts like true stories, not fragmented citations.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📃 No Man-Made Titles</h4>
+          <p>Editorial titles are removed, leaving only the inspired Word of God.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🎭 Poetic Clarity</h4>
+          <p>Experience Psalms and Isaiah with their literary rhythm intact.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🧠 Meditative Flow</h4>
+          <p>Engage with Scripture devotionally, without the cognitive friction of verse numbers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🧠 Semantic Paragraphing</h2>
+      <p>Spoken offers two distinct paragraph modes to format Scripture for clarity and flow:</p>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>📚 USFM-Based Paragraphing</h4>
+          <p>Structured by traditional formatting standards using the Unified Standard Format Marker (USFM) system — a globally recognized markup standard used by Bible translators and publishers. It preserves:</p>
+          <ul>
+            <li>Official paragraph breaks from source manuscripts</li>
+            <li>Consistent formatting across translations</li>
+            <li>Study-friendly structure for referencing and cross-comparison</li>
+          </ul>
+          <p>Ideal for readers who want to stay close to the original editorial layout while still enjoying a clean, prose-like experience.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🤖 AI Coherent Idea Paragraphing</h4>
+          <p>Grouped by meaning, not just formatting. This mode uses AI to analyze the semantic flow of Scripture — clustering verses into natural idea units based on context, theme, and narrative rhythm. It helps you:</p>
+          <ul>
+            <li>Follow complete thoughts across verse boundaries</li>
+            <li>See dialogue and arguments unfold without interruption</li>
+            <li>Experience poetry and prophecy with literary clarity</li>
+          </ul>
+          <p>Perfect for immersive reading, thematic study, and devotional reflection.</p>
+        </div>
+      </div>
+
+      <p><strong>Why It Matters:</strong> Whether you're reading Paul's letters, tracing a parable, or exploring the Psalms, semantic paragraphing helps you understand Scripture as a coherent message, engage with meaning, not just structure, and choose the format that fits your purpose. You can switch between modes anytime — Spoken keeps your place and preserves your context.</p>
+    </div>
+
+    <div class="section">
+      <h2>📱 Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>📖 Distraction Free Reading</h4>
+          <p>No footnotes, no commentary, no titles, just pure Word.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🔄 Multiple Paragraph Formats</h4>
+          <p>Choose Scholarly Paragraphs or AI grouped thought coherent paragraphs.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📝 Biblical Translations</h4>
+          <p>Switch seamlessly between KJV and ASV versions.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🌐 Offline Access</h4>
+          <p>No Internet required after installation.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🖌️ Minimalist Interface</h4>
+          <p>Focus on what matters with a clean, distraction-free design.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📁 Clean PDF Export</h4>
+          <p>No headers, footers or watermarks - just beautiful text.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📖 Supported Bible Versions</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>King James Version (KJV)</h4>
+          <p>Cambridge Edition: The Holy Bible, King James Version. Cambridge University Press. First published in 1611 and refined through centuries of typographic stewardship, the Cambridge edition preserves the poetic cadence and theological depth of the original translators.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>American Standard Version (ASV)</h4>
+          <p>1901 Edition: The Holy Bible, American Standard Version. Thomas Nelson & Sons, 1901. Commissioned as an American revision of the English Revised Version, the ASV emphasizes precision, consistency, and fidelity to the original Hebrew and Greek texts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <figure style="margin: 0; position: relative;">
+          <img src="images/spoken-interface-reader3840-2160.png" alt="Spoken Reader Interface">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">Clean Reader Interface</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/spoken-footer1366x768.png" alt="Spoken PDF Export with Footer">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">PDF Export with Clean Footer</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/spoken-310x150.png" alt="Spoken App Tile">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">App Tile</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/spoken-logo.png" alt="Spoken Logo">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">App Logo</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Technical Details</h2>
+      <p>Spoken is built with modern technology to provide a seamless, responsive experience:</p>
+      <ul>
+        <li><strong>Framework:</strong> .NET 8, .NET MAUI (Windows via WinUI 3)</li>
+        <li><strong>PDF Engine:</strong> QuestPDF</li>
+        <li><strong>Core Features:</strong> USFM ingestion with scholarly paragraph structure, prose formatter, PDF export</li>
+        <li><strong>UI Design:</strong> Minimal blue theme (#0A5BCB), passage input, translation picker, preview, export</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>System Requirements</h2>
+      <table>
+        <tr>
+          <td><strong>Available on:</strong></td>
+          <td>Xbox console, PC, Mobile, Surface Hub, HoloLens</td>
+        </tr>
+        <tr>
+          <td><strong>OS:</strong></td>
+          <td>Windows 10 version 17763.0 or higher</td>
+        </tr>
+        <tr>
+          <td><strong>Memory:</strong></td>
+          <td>4 GB (Minimum), 8 GB (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Processor:</strong></td>
+          <td>1.6 GHz (Minimum), 2.4 GHz (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Graphics Processor:</strong></td>
+          <td>Integrated graphics (Intel HD Graphics 4000 or equivalent) (Minimum)<br>Dedicated graphics card or Intel Iris Xe / AMD Radeon Vega (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Size:</strong></td>
+          <td>167.2 MB</td>
+        </tr>
+        <tr>
+          <td><strong>Languages:</strong></td>
+          <td>English (United States)</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Additional Information</h2>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <p><strong>Developed by:</strong> <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank">Aether Forge</a></p>
+          <p><strong>Released:</strong> September 27, 2025</p>
+          <p><strong>Last Updated:</strong> September 26, 2025</p>
+        </div>
+        <div>
+          <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank">
+            <img src="images/aetherforge-1024x1024.png" alt="Aether Forge Logo" style="max-height: 100px; border-radius: 8px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank" style="color: #d9e8ff;">Aether Forge</a>. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
