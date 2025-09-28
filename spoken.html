@@ -18,7 +18,7 @@
     header {
       background: #2c3e50;
       color: white;
-      padding: 30px 20px;
+      padding: 18px 20px; /* reduced header height */
       text-align: center;
     }
     header h1 {
@@ -42,6 +42,58 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 2em;
+    }
+  /* Header + badge layout (flex, contained) */
+    .header-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-title {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .header-title img {
+      height: 120px; /* ~3x larger than original 40px */
+      width: auto;
+    }
+    .header-text {
+      flex: 1 1 auto;
+      text-align: left;
+    }
+    .header-subtext {
+      text-align: center;
+      margin-top: 0;
+      position: relative;
+      top: -8px; /* nudge upward toward vertical center */
+    }
+    .header-subtext p { margin: 4px 0; }
+    .ms-badge-container {
+      flex: 0 0 auto;
+      width: 300px; /* fits large badge */
+      max-width: 45vw;
+    }
+    .ms-badge-container ms-store-badge,
+    .ms-badge-container > * {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+      }
+      .header-title img {
+        height: 90px;
+      }
+      .ms-badge-container { width: 260px; }
+      .header-subtext { top: -6px; }
     }
     h1, h2, h3 {
       color: #2c3e50;
@@ -161,22 +213,26 @@
 </head>
 <body>
 
-  <header style="position: relative; padding-right: 250px;">
-    <h1><img src="images/spoken-310x150.png" alt="Spoken Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;" onerror="this.style.display='none';">Spoken</h1>
-    <p>The Bible as it was meant to be experienced — immersive, natural, and beautifully readable</p>
-    <p><a href="index.html" class="back-link">← Back to home</a></p>
-    
-    <!-- Microsoft Store Badge positioned in top-right corner -->
-    <div style="position: absolute; top: 30px; right: 50px; width: 160px;">
-      <ms-store-badge
-        productid="9pfmkd32pj0r"
-        productname="Spoken"
-        window-mode="direct"
-        theme="auto"
-        size="medium"
-        language="en-us"
-        animation="off">
-      </ms-store-badge>
+  <header class="header-with-badge">
+    <div class="header-inner">
+      <div class="header-text">
+        <h1 class="header-title"><img src="images/spoken-logo.png" alt="Spoken Logo" onerror="this.src='images/spoken-logo300.png';"><span>Spoken</span></h1>
+      </div>
+      <div class="ms-badge-container">
+        <ms-store-badge
+          productid="9pfmkd32pj0r"
+          productname="Spoken"
+          window-mode="direct"
+          theme="auto"
+          size="large"
+          language="en-us"
+          animation="off">
+        </ms-store-badge>
+      </div>
+    </div>
+    <div class="header-subtext">
+      <p>Immerse yourself in the Word</p>
+      <p><a href="index.html" class="back-link">← Back to home</a></p>
     </div>
   </header>
 
