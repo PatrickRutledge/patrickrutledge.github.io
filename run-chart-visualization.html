@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Run Chart Visualization – A powerful tool for creating professional statistical process control (SPC) charts for manufacturing, quality control, and performance tracking.">
+  <title>Run Chart Visualization</title>
+  <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .back-link {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #00aced;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .code-block {
+      background: #f1f1f1;
+      padding: 0.5em;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .demo-link {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+    }
+    .demo-link:hover {
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1.5em;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+    }
+    .feature-card h4 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 1.5em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <header style="position: relative; padding-right: 160px;">
+    <h1><img src="images/runchart-logo.png" alt="Run Chart Logo" style="height: 1.75em; vertical-align: middle; margin-right: 10px;"> Run Chart Visualization</h1>
+    <p>Professional Statistical Process Control (SPC) Charts for Manufacturing and Quality Control</p>
+    <p><a href="index.html" class="back-link">← Back to home</a></p>
+    
+    <!-- Microsoft Store Badge positioned in top-right corner -->
+    <div style="position: absolute; top: 30px; right: 30px; max-width: 150px;">
+      <ms-store-badge
+          productid="9pps6jpth1fn"
+          productname="Run Chart Visualization"
+          window-mode="direct"
+          theme="auto"
+          size="large"
+          language="en-us"
+          animation="off">
+      </ms-store-badge>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>🎉 Initial Release - Version 1.0.0</h2>
+      <p>Run Chart Visualization is a powerful tool for creating professional statistical process control (SPC) charts. Perfect for manufacturing, quality control, and performance tracking. Create run charts with goal limits and upper and lower specification limits.</p>
+      
+      <div style="text-align: center; margin: 2em 0;">
+        <a href="https://patrickrutledge.github.io/RunChart-Goal/" class="demo-link" target="_blank">🌐 Try Live Web App</a>
+      </div>
+
+      <h3>🎯 Perfect For:</h3>
+      <ul>
+        <li>🏭 <strong>Manufacturing</strong> - Track production metrics and quality control</li>
+        <li>📊 <strong>Quality Control</strong> - Monitor process performance and variations</li>
+        <li>📈 <strong>Six Sigma Projects</strong> - Analyze trends and process improvements</li>
+        <li>🔍 <strong>Performance Monitoring</strong> - Track KPIs and business metrics</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>📥 Easy Data Import</h4>
+          <p>Paste or type in data as CSV. Data import from Excel and CSV files supported.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📤 Export & Share</h4>
+          <p>Export charts as PDF. Share via email, text, or drive for team collaboration.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📏 Statistical Analysis</h4>
+          <p>Automatic mean line shows trend. Set goal limits and control boundaries.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🔧 Customization</h4>
+          <p>Customize labels for units of measure and time. Personalize table name and title.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>📱 Cross-Platform</h4>
+          <p>Works on Windows desktop and mobile devices. Designed for shop floor usage.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h4>🌐 Online/Offline</h4>
+          <p>Offline functionality - works without internet connection when needed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>How It Works</h2>
+      <p>The app allows users to make simple charts by pasting in comma-separated series data. The user can choose the unit of measure for time and the scale of measure, set a goal, and define minimum and maximum levels. The chart automatically produces a mean line based on the series data.</p>
+
+      <div class="project-image" style="margin: 1.5em 0;">
+        <img src="images/run-chart.png" alt="Run Chart with Color Lines" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
+        <p style="text-align: center; font-style: italic; margin-top: 0.5em;">Chart showing color-coded lines for different thresholds and measurements</p>
+      </div>
+      
+      <h3>Understanding the Chart Elements:</h3>
+      <ul>
+        <li><strong style="color: #007bff;">Upper & Lower Spec Limits</strong> (Blue lines) - Define the acceptable range for your data points</li>
+        <li><strong style="color: #28a745;">Goal Line</strong> (Green line) - A target threshold that users can set for desired performance</li>
+        <li><strong style="color: #dc3545;">Mean Line</strong> (Red line) - Automatically calculated average of all data points to show actual performance</li>
+      </ul>
+
+      <p>This approach goes beyond traditional run charts by combining multiple types of reference lines. For production scenarios:</p>
+      <ul>
+        <li>The lower specification limit can represent the breakeven point</li>
+        <li>The upper specification limit indicates maximum possible production</li>
+        <li>The green goal line shows the target production level</li>
+        <li>The red mean line reveals actual performance against these thresholds</li>
+      </ul>
+      
+      <p>Run Chart Visualization can be used for:</p>
+      <ul>
+        <li>Statistical analysis using upper and lower specification limits</li>
+        <li>Production and throughput monitoring (pounds or tons of aggregate, number of widgets)</li>
+        <li>Time series analysis across various intervals (minutes, hours, days, months, or years)</li>
+        <li>Goal setting and performance tracking against established targets</li>
+      </ul>
+      
+      <p>With its simple interface, the app was designed for use on the shop floor from laptops or Windows mobile devices. Charts can be opened in a new tab, saved to PDF, or shared via email, text, or other methods - making it easy for production floor personnel to illustrate activity and take quick measurements.</p>
+    </div>
+
+    <div class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <figure style="margin: 0; position: relative;">
+          <img src="images/run-chart.png" alt="Run Chart Main View">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">Main Chart with Color-coded Lines</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/runchart-hover.png" alt="Run Chart Data Hover">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">Hover Feature Showing Data Point Values</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/runchart-inputs.png" alt="Run Chart Input Interface">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">Simple Data Entry Interface</figcaption>
+        </figure>
+        <figure style="margin: 0; position: relative;">
+          <img src="images/runchart-logo.png" alt="Run Chart Logo">
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; font-size: 0.9em; text-align: center;">App Logo</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>System Requirements</h2>
+      <table>
+        <tr>
+          <td><strong>Available on:</strong></td>
+          <td>PC, HoloLens</td>
+        </tr>
+        <tr>
+          <td><strong>OS:</strong></td>
+          <td>Windows 10 version 19041.0 or higher</td>
+        </tr>
+        <tr>
+          <td><strong>Memory:</strong></td>
+          <td>4 GB (Minimum), 8 GB (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Video Memory:</strong></td>
+          <td>1 GB (Minimum), 2 GB (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Processor:</strong></td>
+          <td>1.6 GHz (Minimum), 2.4 GHz (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Graphics Processor:</strong></td>
+          <td>Integrated graphics (Minimum), Dedicated graphics card (Recommended)</td>
+        </tr>
+        <tr>
+          <td><strong>Size:</strong></td>
+          <td>3.7 MB</td>
+        </tr>
+        <tr>
+          <td><strong>Languages:</strong></td>
+          <td>English (United States)</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Additional Information</h2>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <p><strong>Developed by:</strong> <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank">Aether Forge</a></p>
+          <p><strong>Released:</strong> September 28, 2025</p>
+          <p><strong>Last Updated:</strong> This is a web-based app and will update automatically.</p>
+        </div>
+        <div>
+          <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank">
+            <img src="images/aetherforge-1024x1024.png" alt="Aether Forge Logo" style="max-height: 100px; border-radius: 8px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 <a href="https://patrickrutledge.github.io/aether-forge/" target="_blank">Aether Forge</a>. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
