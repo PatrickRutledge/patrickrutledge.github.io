@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UberJugaad Enhanced SALT Dataset</title>
+  <meta name="description" content="1.9M ERP transactions + 151K business emails + 3.5K documents. Comprehensive enterprise dataset for AI/ML research." />
+  <style>
+    :root {
+      --ink:#2c3e50; --teal:#00aced; --muted:#666; --bg:#f9f9f9; --card:#fff; --shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Segoe UI',sans-serif; background:var(--bg); color:#333; }
+    header { background:var(--ink); color:#fff; padding:22px 18px; }
+    header .wrap { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .title { display:flex; align-items:center; gap:12px; }
+    .title img { height:60px; width:auto; }
+    .title h1 { margin:0; font-size:1.9rem; }
+    .sub { color:#ccc; margin-top:4px; font-size:0.95rem; }
+    .back { color:#ccc; text-decoration:none; }
+    .container { max-width:1100px; margin:0 auto; padding:24px 18px 40px; }
+    .section { background:var(--card); border-radius:8px; box-shadow:var(--shadow); padding:20px; margin:0 0 18px; }
+    h2 { color:var(--ink); margin:0 0 8px; }
+    h3 { color:var(--ink); margin:0 0 6px; }
+    p { margin:8px 0; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+    .pair { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); align-items:center; }
+    .hero-img { width:100%; height:auto; border-radius:6px; border:1px solid #e4e4e4; background:#fff; }
+    ul { margin:6px 0 6px 1.2em; }
+    .muted { color:var(--muted); }
+    .links a { display:inline-block; margin:6px 10px 0 0; color:var(--teal); text-decoration:none; }
+    .kbd { font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#f1f1f1; padding:2px 6px; border-radius:4px; }
+    .note { background:#f6fafc; border-left:4px solid var(--teal); padding:12px; border-radius:6px; }
+    .highlight { background:#fff7e6; border-left:4px solid #f59e0b; padding:12px; border-radius:6px; }
+    .tag { display:inline-block; background:#f59e0b; color:#fff; border-radius:9999px; padding:2px 8px; font-size:0.8rem; vertical-align:middle; margin-left:6px; }
+    
+    .badges { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0; }
+    .badge { 
+      display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:20px; 
+      text-decoration:none; font-weight:500; font-size:0.9rem; transition:all 0.2s ease;
+      box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+    .badge:hover { transform:translateY(-1px); box-shadow:0 4px 8px rgba(0,0,0,0.15); }
+    .badge.doi { background:#FF6B35; color:#fff; }
+    .badge.kaggle { background:#20BEFF; color:#fff; }
+    .badge.github { background:#333; color:#fff; }
+    .badge::before { content:''; width:12px; height:12px; border-radius:50%; }
+    .badge.doi::before { background:#fff; opacity:0.8; }
+    .badge.kaggle::before { background:#fff; opacity:0.8; }
+    .badge.github::before { background:#fff; opacity:0.8; }
+    
+    .stats-row { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); }
+    .stat { background:linear-gradient(135deg, var(--ink), #34495e); color:#fff; padding:16px; border-radius:8px; text-align:center; }
+    .stat-number { font-size:1.8rem; font-weight:bold; margin:0; }
+    .stat-label { font-size:0.85rem; opacity:0.9; margin:4px 0 0; }
+    
+    .company-highlight { background:linear-gradient(135deg, #e8f4fd, #f0f8ff); border:1px solid #b3d9f2; }
+    
+    @media (max-width: 768px) {
+      header .wrap { flex-direction:column; text-align:center; }
+      .title { justify-content:center; }
+      .badges { justify-content:center; }
+    }
+  </style>
+  <link rel="preload" as="image" href="images/enhanced-salt-database.png">
+  <meta property="og:title" content="UberJugaad Enhanced SALT Dataset" />
+  <meta property="og:description" content="1.9M ERP transactions + 151K business emails + 3.5K documents. Comprehensive enterprise dataset for AI/ML research." />
+  <meta property="og:image" content="images/enhanced-salt-database.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Dataset","name":"UberJugaad Enhanced SALT Dataset","description":"Comprehensive enterprise dataset from UberJugaad GmbH with 1.9M ERP transactions, 151K business emails, and 3.5K supporting documents for AI/ML research.","url":"uberjugaad-enhanced-salt.html","creator":{"@type":"Person","name":"Patrick Rutledge"}}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div>
+        <div class="title"><img src="images/enhanced-salt-database.png" alt="UberJugaad Enhanced SALT Dataset"><h1>UberJugaad Enhanced SALT Dataset</h1></div>
+        <div class="sub">1.9M ERP transactions + 151K business emails + 3.5K documents — Enterprise AI/ML Research</div>
+      </div>
+      <div><a class="back" href="projects.html">← Back to projects</a></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section pair">
+      <img class="hero-img" src="images/enhanced-salt-database.png" alt="UberJugaad Enhanced SALT Dataset visualization">
+      <div>
+        <h2>Dataset Overview</h2>
+        <p>The UberJugaad Enhanced SALT Dataset transforms SAP's transactional SALT dataset into a complete enterprise simulation by layering realistic business communications, documents, and embedded patterns. This comprehensive dataset provides researchers with a realistic business ecosystem for developing and testing AI/ML applications.</p>
+        <div class="badges">
+          <a href="https://doi.org/10.5281/zenodo.17125322" class="badge doi" target="_blank">DOI Citation</a>
+          <a href="https://www.kaggle.com/datasets/patrutledge/uberjugaad-gmbh-enhanced-salt-dataset" class="badge kaggle" target="_blank">Kaggle Dataset</a>
+          <a href="https://github.com/PatrickRutledge/uberjugaad-enhanced-salt" class="badge github" target="_blank">GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Dataset Statistics</h2>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-number">1.9M</div>
+          <div class="stat-label">ERP Transactions</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">151K</div>
+          <div class="stat-label">Business Emails</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">3.5K</div>
+          <div class="stat-label">Supporting Documents</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">159MB</div>
+          <div class="stat-label">Total Dataset Size</div>
+        </div>
+      </div>
+    </div>
+    <div class="section company-highlight">
+      <h2>About UberJugaad GmbH</h2>
+      <p>UberJugaad GmbH is a fictional EUR 14.8B German industrial supplier created for this dataset. The company represents a realistic enterprise environment with complex business operations, customer relationships, and communication patterns.</p>
+      
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-number">€14.8B</div>
+          <div class="stat-label">Annual Revenue</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1,467</div>
+          <div class="stat-label">Employees</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">15,606</div>
+          <div class="stat-label">Customers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">2019-2020</div>
+          <div class="stat-label">Data Period</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <div class="grid">
+        <div>
+          <h3>🔗 Linked Data</h3>
+          <p>All files connected via SALESDOCUMENT and customer_id for comprehensive analysis</p>
+        </div>
+        <div>
+          <h3>📧 Realistic Communications</h3>
+          <p>151K emails with authentic subjects, bodies, and business context</p>
+        </div>
+        <div>
+          <h3>⏰ Time-Synchronized</h3>
+          <p>Chronologically consistent data spanning 2019-2020 business operations</p>
+        </div>
+        <div>
+          <h3>🔍 Discovery-Oriented</h3>
+          <p>Patterns embedded in content rather than explicit labels for natural learning</p>
+        </div>
+        <div>
+          <h3>💼 Complete Business Ecosystem</h3>
+          <p>Email threads, documents, and transactions forming realistic business scenarios</p>
+        </div>
+        <div>
+          <h3>🗃️ Multiple Formats</h3>
+          <p>Parquet files for analysis, SQLite database for queries, comprehensive documentation</p>
+        </div>
+      </div>
+    </div>
+            
+    <div class="section">
+      <h2>Dataset Structure</h2>
+      <p>The dataset is organized into logical groups for easy access and analysis:</p>
+      
+      <h3>📊 Core Data Files (83.5 MB)</h3>
+      <ul>
+        <li><span class="kbd">all_communications.parquet</span> - 151,673 business emails (6.9 MB)</li>
+        <li><span class="kbd">erp_transactions.parquet</span> - 1.9M ERP transactions (40.8 MB)</li>
+        <li><span class="kbd">sales_documents.parquet</span> - 243K sales headers (7.1 MB)</li>
+        <li><span class="kbd">sales_items.parquet</span> - 1.9M line items (28.4 MB)</li>
+        <li><span class="kbd">supporting_documents.parquet</span> - 3,467 supporting documents (0.1 MB)</li>
+        <li><span class="kbd">business_documents.parquet</span> - 32 business reports (22 KB)</li>
+      </ul>
+      
+      <h3>📧 Email Database (76 MB)</h3>
+      <ul>
+        <li><span class="kbd">uberjugaad_email.db</span> - SQLite database with 151K emails + 19K contacts</li>
+      </ul>
+      
+      <h3>📖 Documentation & Code</h3>
+      <ul>
+        <li>Comprehensive guides, column descriptions, and getting started materials</li>
+        <li>Sample Jupyter notebook for data exploration</li>
+        <li>Email examples and business document conversion guides</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Use Cases</h2>
+      <div class="grid">
+        <div class="note">Email Classification & Routing</div>
+        <div class="note">Sentiment Analysis</div>
+        <div class="note">Customer Behavior Analysis</div>
+        <div class="note">Document Information Extraction</div>
+        <div class="note">Business Process Mining</div>
+        <div class="note">Anomaly Detection</div>
+        <div class="note">Natural Language Understanding</div>
+        <div class="note">Multi-modal Analysis</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Quick Start</h2>
+      <p>Get started with the dataset using this simple Python code:</p>
+      
+      <div class="kbd" style="display:block; white-space:pre; font-size:0.9rem; line-height:1.4; background:#2d3748; color:#e2e8f0; padding:16px; border-radius:6px; overflow-x:auto;">import pandas as pd
+
+# Load emails
+emails = pd.read_parquet('all_communications.parquet')
+print(f"Total emails: {len(emails):,}")
+
+# Load transactions  
+transactions = pd.read_parquet('erp_transactions.parquet')
+print(f"Total orders: {len(transactions):,}")
+
+# Find emails mentioning specific orders
+order = "0002315309"
+order_emails = emails[emails['body'].str.contains(order, na=False)]
+print(f"Emails about order {order}: {len(order_emails)}")</div>
+    </div>
+
+    <div class="highlight">
+      <h3>🚀 Enhanced for AI Research</h3>
+      <p>This dataset builds on SAP's SALT dataset with synthetic but realistic business communications modeled on real-world enterprise patterns. Perfect for developing and testing AI applications in realistic business contexts.</p>
+    </div>
+    <div class="section">
+      <h2>Citation</h2>
+      <p>If you use this dataset in your research, please cite:</p>
+      
+      <div class="kbd" style="display:block; white-space:pre; font-size:0.85rem; line-height:1.3; background:#2d3748; color:#e2e8f0; padding:16px; border-radius:6px; overflow-x:auto;">@dataset{rutledge_patrick_2025_17125322,
+  author       = {Rutledge, Patrick},
+  title        = {{UberJugaad GmbH Enhanced SALT Dataset}},
+  month        = sep,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.17125322},
+  url          = {https://doi.org/10.5281/zenodo.17125322}
+}</div>
+      
+      <p><strong>APA Format:</strong><br>
+      Rutledge, P. (2025). UberJugaad GmbH Enhanced SALT Dataset (Version v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17125322</p>
+    </div>
+
+    <div class="section">
+      <h2>License & Acknowledgments</h2>
+      <p><strong>License:</strong> MIT License for enhanced content / SAP Sample Code License for original SALT data</p>
+      <p><strong>Acknowledgments:</strong> Built on SAP's SALT dataset, enhanced with synthetic business communications for AI/ML applications. The original SALT authors are not affiliated with these enhancements.</p>
+      
+      <div class="links">
+        <a href="https://doi.org/10.5281/zenodo.17125322" target="_blank">View DOI Citation</a>
+        <a href="https://www.kaggle.com/datasets/patrutledge/uberjugaad-gmbh-enhanced-salt-dataset" target="_blank">Access on Kaggle</a>
+        <a href="https://github.com/PatrickRutledge/uberjugaad-enhanced-salt" target="_blank">Source Code</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
