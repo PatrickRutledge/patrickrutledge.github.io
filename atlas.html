@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATLAS – Actionable Thinking Analytics System</title>
+  <meta name="description" content="ATLAS unifies ERP data, unstructured communications, and external knowledge to go from Data → AI → Action with persistent executive memory." />
+  <style>
+    :root {
+      --ink:#2c3e50; --teal:#00aced; --muted:#666; --bg:#f9f9f9; --card:#fff; --shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Segoe UI',sans-serif; background:var(--bg); color:#333; }
+    header { background:var(--ink); color:#fff; padding:22px 18px; }
+    header .wrap { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .title { display:flex; align-items:center; gap:12px; }
+    .title img { height:60px; width:auto; }
+    .title h1 { margin:0; font-size:1.9rem; }
+    .sub { color:#ccc; margin-top:4px; font-size:0.95rem; }
+    .back { color:#ccc; text-decoration:none; }
+    .container { max-width:1100px; margin:0 auto; padding:24px 18px 40px; }
+    .section { background:var(--card); border-radius:8px; box-shadow:var(--shadow); padding:20px; margin:0 0 18px; }
+    h2 { color:var(--ink); margin:0 0 8px; }
+    h3 { color:var(--ink); margin:0 0 6px; }
+    p { margin:8px 0; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+    .pair { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); align-items:center; }
+    .hero-img { width:100%; height:auto; border-radius:6px; border:1px solid #e4e4e4; background:#fff; }
+    ul { margin:6px 0 6px 1.2em; }
+    .muted { color:var(--muted); }
+    .links a { display:inline-block; margin:6px 10px 0 0; color:var(--teal); text-decoration:none; }
+    .kbd { font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#f1f1f1; padding:2px 6px; border-radius:4px; }
+    .pillars { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); }
+    .note { background:#f6fafc; border-left:4px solid var(--teal); padding:12px; border-radius:6px; }
+    .highlight { background:#fff7e6; border-left:4px solid #f59e0b; }
+    .tag { display:inline-block; background:#f59e0b; color:#fff; border-radius:9999px; padding:2px 8px; font-size:0.8rem; vertical-align:middle; margin-left:6px; }
+  </style>
+  <link rel="preload" as="image" href="images/ATLAS.png">
+  <link rel="preload" as="image" href="images/atlas-acronym.png">
+  <link rel="preload" as="image" href="images/TSNE.png">
+  <meta property="og:title" content="ATLAS – Actionable Thinking Analytics System" />
+  <meta property="og:description" content="From Data → AI → Action with executive memory. Unified ERP + communications + external knowledge on BigQuery AI." />
+  <meta property="og:image" content="images/ATLAS.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"ATLAS","applicationCategory":"BusinessApplication","description":"ATLAS unifies ERP data, unstructured communications, and external knowledge to go from Data → AI → Action with persistent executive memory.","url":"atlas.html"}
+  </script>
+  </head>
+<body>
+  <header>
+    <div class="wrap">
+      <div>
+        <div class="title"><img src="images/ATLAS.png" alt="ATLAS Logo"><h1>ATLAS</h1></div>
+        <div class="sub">Actionable Thinking Analytics System — From Data → AI → Action</div>
+      </div>
+      <div><a class="back" href="projects.html">← Back to projects</a></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section pair">
+      <img class="hero-img" src="images/atlas-acronym.png" alt="ATLAS acronym slide">
+      <div>
+        <h2>Executive Summary</h2>
+        <p>ATLAS exemplifies Google BigQuery's “Data → AI → Action” vision by transforming executive decision-making from reactive reporting to proactive intelligence generation. It unifies <strong>structured ERP data</strong>, <strong>unstructured communications</strong>, and <strong>external knowledge</strong> into a <em>self-improving</em> memory that delivers timely, actionable recommendations.</p>
+        <div class="note">
+          <strong>Key Difference:</strong> Unlike traditional BI that reports what happened, ATLAS focuses on <em>what should happen next</em> and remembers validated insights for future decisions.
+        </div>
+      </div>
+    </div>
+
+    <!-- Innovation callout: Pillar 4 highlighted -->
+    <div class="section highlight">
+      <h2 id="innovation">ATLAS Innovation: Knowledge Ecosystem Management <span class="tag">Differentiator</span></h2>
+      <p>This is the core novelty of ATLAS: it <em>curates and compounds</em> knowledge across ERP facts, communications, and external research with <strong>human-in-the-loop validation</strong>, then remembers it as <strong>persistent executive memory</strong> to inform the next decision.</p>
+      <ul>
+        <li><strong>External intelligence + qualified integration:</strong> Bring market research and competitor signals alongside internal truth.</li>
+        <li><strong>Validated memory:</strong> Only approved insights enter the knowledge base with provenance and context.</li>
+        <li><strong>Innovation pipeline:</strong> Track ideas from hunch → evidence → IRR-ready execution plans.</li>
+        <li><strong>Compounding effect:</strong> Each cycle makes the system—and your organization—smarter.</li>
+      </ul>
+      <p class="muted">BI reports what happened. Consumer AI chats then forgets. ATLAS <em>decides what should happen next</em> and <em>remembers why</em>.</p>
+    </div>
+
+    <div class="section">
+      <h2>“Data → AI → Action” realized</h2>
+      <ul>
+        <li><strong>Data → AI:</strong> Real-time ingestion across ERP, email/meetings, and research; processed with BigQuery AI (Generate, Forecast, Embeddings, Vector Search).</li>
+        <li><strong>AI → Action:</strong> Insights routed to owners/channels with <em>persistent executive memory</em> and <em>auditability</em>.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>The four pillars</h2>
+      <div class="pillars">
+        <div>
+          <h3>1) The AI Architect 🧠 (Generative AI)</h3>
+          <ul>
+            <li><span class="kbd">AI.GENERATE_TABLE</span> for executive briefs from unstructured communications.</li>
+            <li><span class="kbd">AI.FORECAST</span> for scenario planning on historical and live signals.</li>
+            <li>Stream-of-consciousness capture → structured strategy artifacts.</li>
+          </ul>
+          <p class="muted">Impact: minutes to comprehensive briefs while maintaining thought flow.</p>
+        </div>
+        <div>
+          <h3>2) The Semantic Detective 🕵️‍♀️ (Vector Search)</h3>
+          <ul>
+            <li>VECTOR_SEARCH over organizational memory to find prior similar situations.</li>
+            <li>Embeddings to reveal non-obvious relationships across customers, markets, and ops.</li>
+            <li>Semantic competitive intelligence across communications and research.</li>
+          </ul>
+          <p class="muted">Impact: instantly answer “have we seen this before?” with links to what worked.</p>
+        </div>
+        <div>
+          <h3>3) The Multimodal Pioneer 🖼️ (Structured + Unstructured)</h3>
+          <ul>
+            <li>Unify ERP metrics with emails/notes/docs in a single queryable context.</li>
+            <li>Communication pattern analysis linking complaints → transactions → delivery.</li>
+            <li>Executive views that combine numbers and narrative.</li>
+          </ul>
+          <p class="muted">Impact: decisions made on the full story, not just numbers or anecdotes.</p>
+        </div>
+        <div>
+          <h3>4) Knowledge Ecosystem Management 🌐 (ATLAS Innovation) <span class="tag">Innovation</span></h3>
+          <ul>
+            <li>External intelligence + qualified knowledge integration.</li>
+            <li>Human-in-the-loop validation → persistent learning and provenance.</li>
+            <li>Innovation pipeline: track ideas from hunch → evidence → IRR-ready plans.</li>
+          </ul>
+          <p class="muted">Impact: from data-driven to intelligence-driven; the system grows smarter.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why BigQuery AI fits</h2>
+      <ul>
+        <li><strong>Serverless & managed:</strong> zero infra burden → executive focus.</li>
+        <li><strong>Separation of compute & storage:</strong> petabyte-scale thinking, real-time dialogue.</li>
+        <li><strong>NoOps posture:</strong> automatic processing, categorization, and retrieval.</li>
+        <li><strong>Open formats:</strong> knowledge remains portable—no lock-in.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Innovation workflow</h2>
+      <ul>
+        <li><strong>Idea Greenhouse:</strong> park hunches; monitor data/market; resurface when evidence exists.</li>
+        <li><strong>Innovation Ranker:</strong> living portfolio (Ready / Developing / Watching) that updates with context.</li>
+        <li><strong>Knowledge Amplifier:</strong> connect signals across ERP, comms, and market → recommend action.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Competitive differentiation</h2>
+      <div class="grid">
+        <div>
+          <h3>vs. Consumer AI (ChatGPT/Claude)</h3>
+          <ul>
+            <li>No organizational memory or persistence.</li>
+            <li>No direct integration to ERP/comms/research.</li>
+            <li>No learning loop that builds institutional knowledge.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>vs. Traditional BI</h3>
+          <ul>
+            <li>Reactive & static vs. proactive & conversational.</li>
+            <li>Requires prep/SQL/IT vs. automated ingestion and semantics.</li>
+            <li>Numbers-only vs. multimodal context with provenance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Key messages</h2>
+      <ul>
+        <li><strong>Technical:</strong> Uses BigQuery AI’s three approaches plus ATLAS knowledge ecosystem innovation.</li>
+        <li><strong>Business:</strong> From warehouse to decision accelerator—faster, better decisions that compound.</li>
+        <li><strong>Strategic:</strong> Realizes “Data → AI → Action” for executive decision-making at scale.</li>
+      </ul>
+    </div>
+
+    <div class="section links">
+      <h2>Explore</h2>
+      <a href="https://www.kaggle.com/competitions/bigquery-ai-hackathon/writeups/new-writeup-1758577960942" target="_blank" rel="noopener noreferrer">Kaggle writeup →</a>
+      <a href="https://github.com/PatrickRutledge/BigQuery-AI" target="_blank" rel="noopener noreferrer">GitHub repository →</a>
+    </div>
+
+    <div class="section muted">
+      <p>Have screenshots (ingestion, semantic entities, decision pane, action log)? Share them and I’ll add a gallery with concise captions.</p>
+    </div>
+  </div>
+
+  <footer style="background:#2c3e50;color:#aaa;text-align:center;padding:16px;">
+    © 2025 Patrick Rutledge. All rights reserved.
+  </footer>
+</body>
+</html>
