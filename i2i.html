@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="I2I - Incident to Insight. A local incident reporting and continuous improvement system for healthcare practices available on the Microsoft Store." />
+  <title>I2I - Incident to Insight</title>
+  <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 18px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .back-link {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .header-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-title {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .header-title img {
+      height: 96px;
+      width: auto;
+    }
+    .header-text {
+      flex: 1 1 auto;
+      text-align: left;
+    }
+    .header-subtext {
+      text-align: center;
+      margin-top: 0;
+      position: relative;
+      top: -6px;
+    }
+    .header-subtext p {
+      margin: 4px 0;
+    }
+    .ms-badge-container {
+      flex: 0 0 auto;
+      width: 300px;
+      max-width: 45vw;
+    }
+    .ms-badge-container ms-store-badge,
+    .ms-badge-container > * {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #fff;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 1em;
+      background: #f8f8f8;
+      padding: 12px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1em;
+      margin-top: 1em;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1.25em;
+      border-radius: 6px;
+      border-left: 4px solid #2c3e50;
+    }
+    .feature-card h3 {
+      margin-top: 0;
+      font-size: 1.05em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.75em;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+      vertical-align: top;
+    }
+    ul {
+      margin: 0.5em 0 0 1em;
+    }
+    a {
+      color: #00aced;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .cta-link {
+      display: inline-block;
+      background: #2c3e50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 10px 0 0;
+    }
+    .cta-link:hover {
+      background: #1a2732;
+      color: white;
+      text-decoration: none;
+    }
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+      }
+      .header-title img {
+        height: 80px;
+      }
+      .header-text {
+        text-align: center;
+      }
+      .ms-badge-container {
+        width: 260px;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-with-badge">
+    <div class="header-inner">
+      <div class="header-text">
+        <h1 class="header-title"><img src="images/i2i_logo_1080.png" alt="I2I logo" /><span>I2I - Incident to Insight</span></h1>
+      </div>
+      <div class="ms-badge-container">
+        <ms-store-badge
+          productid="9n2p10dbfx86"
+          productname="I2I - Incident to Insight"
+          window-mode="direct"
+          theme="auto"
+          size="large"
+          language="en-us"
+          animation="off">
+        </ms-store-badge>
+      </div>
+    </div>
+    <div class="header-subtext">
+      <p>Turning incidents into organizational learning for healthcare practices</p>
+      <p><a href="index.html" class="back-link">← Back to home</a></p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Problem Statement &amp; Value Proposition</h2>
+      <p>Small to medium physician practices often face the same incidents over and over because issues are captured inconsistently, follow-up is vague, and teams struggle to distinguish HR concerns from broken processes or service failures. I2I provides a structured incident reporting database that helps teams investigate thoroughly, assign corrective actions, and move cases to close instead of letting them disappear.</p>
+      <ul>
+        <li>Separates process issues from employee performance and customer service concerns</li>
+        <li>Uses unique case numbering and guided steps so every incident has a clear path to closure</li>
+        <li>Supports continuous improvement without enterprise software overhead</li>
+        <li>Keeps all data local and under the practice's control</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Project Overview</h2>
+      <p>I2I is a local incident tracking application designed for healthcare practices, clinics, and care facilities. The system gives staff a repeatable method for documenting incidents, investigating root causes, assigning corrective actions, and tracking what the organization has learned over time. No cloud account is required, and all data remains on the local machine in a private SQLite database.</p>
+      <div class="project-image">
+        <img src="i2i_dashboard_screenshot.png" alt="I2I dashboard screenshot" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why It Works</h2>
+      <p>The strength of the incident database is not just capture. It drives a case from the first report through investigation, action ownership, verification, and closure. That matters for organizations trying to improve continuously because unresolved incidents rarely represent a single problem. They often combine customer service breakdowns, process failures, unclear accountability, and communication gaps. I2I makes those distinctions visible and actionable.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>8-Section Incident Report</h3>
+          <p>Guided incident workflow covers identification, narrative, root cause analysis, corrective actions, service recovery, team debrief, and closure.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Guided 5 Whys Analysis</h3>
+          <p>Prompts help investigators move beyond the surface issue toward the real root condition with intuitive steps.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Dashboard &amp; Tracking</h3>
+          <p>Status cards, search, filters, and a sortable incident table keep Open, In Progress, Closed, and Escalated cases visible.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Corrective Action Tracking</h3>
+          <p>Each action includes an owner, due date, and verification method so follow-through is concrete and measurable.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Investigation Worksheets</h3>
+          <p>Printable 5 Whys, Fishbone, and checklist tools support interviews and structured investigations.</p>
+        </div>
+        <div class="feature-card">
+          <h3>100% Local &amp; Private</h3>
+          <p>No cloud, no accounts, and no telemetry. Data stays on the device and can be backed up by copying one folder.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Built on Proven Methodology</h2>
+      <table>
+        <tr>
+          <th>Framework</th>
+          <th>How It Supports I2I</th>
+        </tr>
+        <tr>
+          <td>Root Cause Analysis</td>
+          <td>Focuses teams on systemic conditions instead of defaulting to blame.</td>
+        </tr>
+        <tr>
+          <td>5 Whys</td>
+          <td>Guides investigators from the visible incident to the underlying cause.</td>
+        </tr>
+        <tr>
+          <td>Ishikawa Diagram</td>
+          <td>Maps causes across people, process, equipment, materials, communication, and environment.</td>
+        </tr>
+        <tr>
+          <td>PDSA</td>
+          <td>Supports corrective actions with verification rather than one-time fixes.</td>
+        </tr>
+        <tr>
+          <td>Just Culture</td>
+          <td>Helps distinguish human error, at-risk behavior, and reckless behavior.</td>
+        </tr>
+        <tr>
+          <td>Swiss Cheese Model</td>
+          <td>Encourages review of layered defenses and where they failed.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Who It Is For</h2>
+      <ul>
+        <li>Practice managers leading quality improvement in clinics and medical offices</li>
+        <li>Nursing leaders in assisted living, memory care, and independent living facilities</li>
+        <li>QI coordinators who need a lightweight system without enterprise complexity</li>
+        <li>Healthcare teams transitioning from reactive incident response to organizational learning</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Microsoft Store &amp; Product Links</h2>
+      <p>I2I is available through the Microsoft Store and also has a public product page with the full feature description and usage guidance.</p>
+      <p>
+        <a class="cta-link" href="ms-windows-store://pdp/?productid=9N2P10DBFX86">Open in Microsoft Store</a>
+        <a class="cta-link" href="https://patrickrutledge.github.io/I2I/index.html" target="_blank">View Product Site</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Technologies Used</h2>
+      <table>
+        <tr><th>Component</th><th>Stack / Technology</th></tr>
+        <tr><td>Application Type</td><td>Windows desktop application</td></tr>
+        <tr><td>Data Storage</td><td>Local SQLite database</td></tr>
+        <tr><td>Distribution</td><td>Microsoft Store</td></tr>
+        <tr><td>Privacy Model</td><td>Local-first, no cloud dependency</td></tr>
+        <tr><td>Workflow Support</td><td>Guided incident capture, investigation, corrective action, and closure</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Current Status</h2>
+      <ul>
+        <li>Available on the Microsoft Store</li>
+        <li>Positioned for small to mid-size healthcare organizations</li>
+        <li>Focused on operational learning, service recovery, and case closure discipline</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Patrick Rutledge. All rights reserved.
+  </footer>
+
+</body>
+</html>
